@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.moengage.core.DataCenter;
 import com.moengage.core.MoESdkStateHelper;
 import com.moengage.core.MoEngage;
+import com.moengage.core.Properties;
 import com.moengage.core.analytics.MoEAnalyticsHelper;
 import com.moengage.core.model.AppStatus;
 import com.moengage.core.model.UserGender;
@@ -100,6 +101,16 @@ public class signup extends AppCompatActivity
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Properties properties = new Properties();
+                properties
+                        // tracking integer
+                        .addAttribute("id", email.getText())
+                        // tracking string
+
+
+                        .addAttribute("loginDate", new Date());
+
+                MoEAnalyticsHelper.INSTANCE.trackEvent(getApplicationContext(), "Logged In", properties);
                 Intent intent= new Intent (signup.this,MainActivity.class);
                 startActivity(intent);
 

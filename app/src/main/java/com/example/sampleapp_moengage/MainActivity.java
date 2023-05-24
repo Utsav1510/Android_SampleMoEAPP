@@ -12,6 +12,8 @@ import android.widget.EditText;
 
 import com.moengage.cards.ui.CardActivity;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.moengage.core.Properties;
 import com.moengage.inbox.*;
 
 import com.moengage.cards.ui.CardActivity;
@@ -26,6 +28,8 @@ import com.moengage.core.model.AppStatus;
 import com.moengage.inapp.MoEInAppHelper;
 import com.moengage.inbox.ui.view.InboxActivity;
 import com.moengage.pushbase.MoEPushHelper;
+
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -94,6 +98,17 @@ public class MainActivity extends AppCompatActivity {
          signin.setOnClickListener(new View.OnClickListener(){
              @Override
              public void onClick(View v) {
+
+                 Properties properties = new Properties();
+                 properties
+                         // tracking integer
+                         .addAttribute("id", emaillogin.getText())
+                         // tracking string
+
+
+                         .addAttribute("loginDate", new Date());
+
+                 MoEAnalyticsHelper.INSTANCE.trackEvent(getApplicationContext(), "Logged In", properties);
                  MoEAnalyticsHelper.INSTANCE.setUniqueId(getApplicationContext(),String.valueOf(emaillogin.getText()));
 
              }

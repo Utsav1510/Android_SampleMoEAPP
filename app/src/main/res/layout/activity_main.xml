@@ -13,8 +13,8 @@
         android:layout_height="68dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="233dp"
-        android:layout_marginBottom="202dp"
+        android:layout_marginEnd="217dp"
+        android:layout_marginBottom="214dp"
         android:text="Sign In" />
 
     <Button
@@ -24,8 +24,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="201dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="215dp"
         android:text="Signup" />
 
     <Button
@@ -73,8 +73,12 @@
         android:layout_height="59dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="118dp"
+
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="92dp"
         android:text="Sign out" />
 
 </RelativeLayout>
+    <!--        android:layout_marginEnd="142dp"-->
+    <!--        android:layout_marginBottom="123dp"-->

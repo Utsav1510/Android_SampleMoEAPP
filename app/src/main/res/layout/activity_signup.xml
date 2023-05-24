@@ -13,12 +13,11 @@
         android:layout_height="78dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="117dp"
-        android:layout_marginBottom="74dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="80dp"
         android:text="Sign in"
 
         />
-
 
     <EditText
         android:id="@+id/name"
@@ -62,6 +61,7 @@
         android:hint="Phone"
         android:inputType="phone" />
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -70,8 +70,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="13dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginBottom="325dp"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="272dp"
         android:text="Select Date:"
         android:textColor="@color/black"
         android:textSize="30sp"
@@ -88,8 +88,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="89dp"
-        android:layout_marginBottom="229dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="204dp"
         android:onClick="openDatePicker"
         android:text="JAN 01 2020"
         android:textColor="@color/black"
@@ -97,7 +97,6 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
 
     <TextView
         android:id="@+id/gender"
